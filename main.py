@@ -10,6 +10,11 @@ page_header = """
 <html>
     <head>
         <title>FlickList</title>
+        <style>
+            .error {color: red;
+
+            }
+        </style>
     </head>
     <body>
         <h1>FlickList</h1>
@@ -124,7 +129,7 @@ def index():
         error_element = ''
 
     # combine all the pieces to build the content of our response
-    main_content = edit_header + add_form + crossoff_form + error_element
+    main_content = edit_header + add_form + error_element + crossoff_form
 
 
     # build the response string
